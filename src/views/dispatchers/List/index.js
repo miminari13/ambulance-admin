@@ -126,7 +126,7 @@ const DispatchersAll = () => {
                             </TableRow>
                         </TableHead>
                         <TableBody>
-                            {dispatchers ? (
+                            {dispatchers && dispatchers.length > 0 ? (
                                 dispatchers.map((dispatcher) => (
                                     <TableRow key={dispatcher.id} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
                                         <TableCell component="th" scope="row">
